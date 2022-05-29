@@ -27,3 +27,37 @@ The steps to import an STL file:
 </ul>
 
 
+## Get the radius of a selected arc
+<ul>
+  <li>Select the edge in the 3D view.</li>
+  <li>Press Ctrl+Shift+P.</li>
+  <li>In the python console (view menu -> panels -> python console) enter:</li>
+  elt.Curve.Radius
+</ul>
+
+## Get the length of selected edge
+<ul>
+  <li>Select the edge in the 3D view.</li>
+  <li>Press Ctrl+Shift+P.</li>
+  <li>In the python console (view menu -> panels -> python console) enter:</li>
+  elt.Length
+</ul>
+
+## Expression syntax to refer to the Body object Placement object
+<ul>
+  <li>For example, to use the z value of the Body placement</li>
+  <li>Body.Placement.Base.z</li>
+</ul>
+
+## Find open and gap vertexes in a sketch
+<ul>
+  <li>In the python console, enter:</li>
+  App.ActiveDocument.Sketch.detectMissingPointOnPointConstraints(100)
+  <li>This launch the detection process, returns the number of missing constraints.</li>
+  <li>In the python console, enter:</li>
+  App.ActiveDocument.Sketch.MissingPointOnPointConstraints
+  <li>This returns a Python List of tuples that are the missing coincidences found at the previous step</li>
+  <li>In the python console, enter:</li>
+  App.ActiveDocument.Sketch.OpenVertices
+  <li>This return a Python list of tuples that are the open vertexes.</li>
+</ul>
