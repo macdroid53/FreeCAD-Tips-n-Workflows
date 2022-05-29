@@ -61,3 +61,21 @@ The steps to import an STL file:
   App.ActiveDocument.Sketch.OpenVertices
   <li>This return a Python list of tuples that are the open vertexes.</li>
 </ul>
+
+## Using shapestrings effectively
+Most discussions make this far more complicated than it is.
+
+There are a few things to keep in mind:
+<ul>
+  <li>The chosen font must be viable for use.</li>
+  <li>It must have closed profiles and no crossing or intersecting lines.</li>
+</ul>
+Fonts are art, so basically don't necessarily care about such things.
+
+If working in Part Design, you can't pocket through your solid because letters like R, O, D, etc. are going to break the single solid rule. A Pocket into the surface, but not through, or a Pad is fine.
+
+Many videos show various machinations that are out of date, since you can just drag the Shapestring into the Body, position it (grossly with Transform, then fine tune with the properties of the Shapestring), then Pad or Pocket.
+
+  
+  
+  
