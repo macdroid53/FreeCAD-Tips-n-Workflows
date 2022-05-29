@@ -5,6 +5,9 @@
 ## Import STL files
 STL files are best used to trace over. They are typically more trouble than they are worth.
 
+They can be imported and converted to a solid. But, there is no parametric info in a STL file.
+The result of the import, if successful, is a solid, devoid of any parametric information.
+
 The steps to import an STL file:
 <ul>
   <li>Use File>Import to import the STL file</li>
