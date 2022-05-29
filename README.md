@@ -20,8 +20,10 @@ The steps to import an STL file:
   <li>use Part WB Check geometry to make sure it produced a valid shape</li>
   <li>use Part WB Convert to solid</li>
   <li>use Part WB Check geometry to make sure it produced a valid solid</li>
-  <li>If all that was successful, then create a Part Design Body</li>
-  This will create a Basefeature. It is a solid that you can add to or cut away from.
+  <li>if all that was successful, the solid can be used directly with Part workbench</li>
+  <li>to use it with Part Design workbench, create a Part Design Body</li>
+  <li>drag-n-drop the solid into the Body<li>
+  This will create a Basefeature. It is a solid that you can add to or cut away from with Part Design tools.
 </ul>
 
 
