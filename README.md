@@ -120,7 +120,7 @@ Result:
   <ul>
     <li>MoveToOrigin macro</li>
     <li>Manipulator workbench</li>
-  <ul>
+  </ul>
   <li>Use KicadSteup workbench Reset origin</li>
 </ul>
 
