@@ -76,6 +76,55 @@ If working in Part Design, you can't pocket through your solid because letters l
 
 Many videos show various machinations that are out of date, since you can just drag the Shapestring into the Body, position it (grossly with Transform, then fine tune with the properties of the Shapestring), then Pad or Pocket.
 
-  
-  
-  
+## Expression syntax for unnamed constraint
+
+Given Sketch has a constraint 'Constraint9' that has been named 'abc' the following can be used in an expression.
+
+*Sketch.Constraints.abc*
+
+But what is the syntax for an unnamed constraint?
+
+*Sketch.Constraints.Constraint9*
+
+Fails to parse.
+
+***Answer:*** 
+
+*Sketch.Constraints[8]*
+
+**Note:** Look at the Properties view and see that the Constraints property is a list
+
+## Mass, COG, etc.
+In the Python console enter:
+
+*m = FreeCADGui.Selection.getSelection()[0].Shape.MatrixOfInertia*
+*m*
+
+Result:
+
+*
+Matrix ((61.7946,4.9086,-11.5488,0),(4.9086,66.5861,-18.4738,0),(-11.5488,-18.4738,102.199,0),(0,0,0,1))
+*
+
+
+*mass= FreeCADGui.Selection.getSelection()[0].Shape.CenterOfMass*
+*mass*
+
+Result:
+
+*Vector (21.63548536771986, 35.499731244404686, 36.656887161270994)*
+
+## Dealing with lost in space import geometry
+
+<ul>
+  <li>If the solid is in a container, drag it out into the tree</li>
+  <li>Use one of the following to move the solid to the origin</li>
+  <ul>
+    <li>MoveToOrigin macro</li>
+    <li>Manipulator workbench</li>
+  <ul>
+  <li>Use KicadSteup workbench Reset origin</li>
+</ul>
+
+Now, the solid can be dragged into a Body and not revert to it's original location in space.
+
