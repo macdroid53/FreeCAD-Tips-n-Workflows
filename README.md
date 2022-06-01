@@ -92,7 +92,7 @@ Fails to parse.
 
 *Sketch.Constraints[8]*
 
-**Note:** Look at the Properties view and see that the Constraints property is a list
+**Note:** Look at the Properties view and see that the Constraints property is a Python list
 
 ## Mass, COG, etc.
 In the Python console enter:
