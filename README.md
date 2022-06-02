@@ -167,7 +167,10 @@ After recompute, cell A2 of the spreadsheet is the area of Face001.
   <li>If the solid is in a container, drag it out into the tree</li>
   <li>Use one of the following to move the solid to the origin</li>
   <ul>
-    <li>MoveToOrigin macro</li>
+    <li>MoveToOrigin macro<img src="https://wiki.freecadweb.org/images/2/2f/MoveToOrigin.svg"
+       alt="HTML image alt text"
+       title="Optional image title"
+       width="60px"/></li>
     <li>Manipulator workbench<img src="https://raw.githubusercontent.com/easyw/Manipulator/master/Resources/icons/Centering.svg"
        alt="HTML image alt text"
        title="Optional image title"
