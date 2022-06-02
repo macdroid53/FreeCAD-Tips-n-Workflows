@@ -171,12 +171,12 @@ After recompute, cell A2 of the spreadsheet is the area of Face001.
        alt="HTML image alt text"
        title="Optional image title"
        width="60px"/></li>
-    <li>Manipulator workbench<img src="https://raw.githubusercontent.com/easyw/kicadStepUpMod/master/Resources/icons/resetPlacement.svg"
+    <li>Manipulator workbench</li>
+  </ul>
+  <li>Use KicadSteup workbench Reset origin<img src="https://raw.githubusercontent.com/easyw/kicadStepUpMod/master/Resources/icons/resetPlacement.svg"
        alt="HTML image alt text"
        title="Optional image title"
        width="60px"/></li>
-  </ul>
-  <li>Use KicadSteup workbench Reset origin</li>
 </ul>
 
 Now, the solid can be dragged into a Body and not revert to it's original location in space.
