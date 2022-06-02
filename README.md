@@ -170,16 +170,16 @@ After recompute, cell A2 of the spreadsheet is the area of Face001.
     <li>MoveToOrigin macro<img src="https://wiki.freecadweb.org/images/2/2f/MoveToOrigin.svg"
        alt="HTML image alt text"
        title="Optional image title"
-       width="60px"/></li>
+       width="48px"/></li>
     <li>Manipulator workbench<img src="https://raw.githubusercontent.com/easyw/Manipulator/master/Resources/icons/Centering.svg"
        alt="HTML image alt text"
        title="Optional image title"
-       width="60px"/></li>
+       width="48px"/></li>
   </ul>
   <li>Use KicadSteup workbench Reset origin<img src="https://raw.githubusercontent.com/easyw/kicadStepUpMod/master/Resources/icons/resetPlacement.svg"
        alt="HTML image alt text"
        title="Optional image title"
-       width="60px"/></li>
+       width="48px"/></li>
 </ul>
 
 Now, the solid can be dragged into a Body and not revert to it's original location in space.
