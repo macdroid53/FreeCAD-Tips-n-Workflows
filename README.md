@@ -181,6 +181,7 @@ After recompute, cell A2 of the spreadsheet is the area of Face001.
        title="Optional image title"
        width="48px"/></li>
 </ul>
+*(All of the above can be found in Addon manager.)*
 
 Now, the solid can be dragged into a Body and not revert to it's original location in space.
 
