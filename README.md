@@ -171,7 +171,7 @@ After recompute, cell A2 of the spreadsheet is the area of Face001.
        alt="HTML image alt text"
        title="Optional image title"
        width="48px"/></li>
-    <li>Manipulator workbench<img src="https://raw.githubusercontent.com/easyw/Manipulator/master/Resources/icons/Centering.svg"
+    <li>Manipulator workbench, Align tools, Move selected <img src="https://raw.githubusercontent.com/easyw/Manipulator/master/Resources/icons/Centering.svg"
        alt="HTML image alt text"
        title="Optional image title"
        width="48px"/></li>
