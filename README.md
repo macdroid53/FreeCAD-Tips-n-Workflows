@@ -94,23 +94,70 @@ Fails to parse.
 
 **Note:** Look at the Properties view and see that the Constraints property is a Python list
 
-## Mass, COG, etc.
+## Mass, COG, Area, etc.
 In the Python console enter:
 
 *m = FreeCADGui.Selection.getSelection()[0].Shape.MatrixOfInertia*
 *m*
 
-Result:
+***Result:***
 
 *Matrix ((61.7946,4.9086,-11.5488,0),(4.9086,66.5861,-18.4738,0),(-11.5488,-18.4738,102.199,0),(0,0,0,1))*
 
+In the Python console enter:
 
-*mass= FreeCADGui.Selection.getSelection()[0].Shape.CenterOfMass*
+*mass = FreeCADGui.Selection.getSelection()[0].Shape.CenterOfMass*
 *mass*
 
-Result:
+***Result:***
 
 *Vector (21.63548536771986, 35.499731244404686, 36.656887161270994)*
+
+In the Python console enter:
+
+*a = FreeCADGui.Selection.getSelection()[0].Shape.Area*
+*a*
+
+Result:
+*106.4468*
+
+## Expression syntax for spreadsheet cell to access area property
+
+Assuming there is a feature in the Tree view with the label *Face001*
+
+*=Face001.Shape.Area*
+
+## Select an object by name
+
+Assume the document is named: *Unnamed*
+Assume the objects label in the Treeview is: *Face001*
+
+In the Python console enter:
+
+*Gui.Selection.addSelection('Unnamed','Face001')*
+
+***Result:***
+
+The first selection object is Face001.
+
+*m = FreeCADGui.Selection.getSelection()[0].Shape*
+
+## Set a spreadsheet cell from the Python console
+
+Assume the document is named: *Unnamed*
+Assume the objects label in the Treeview is: *Face001*
+
+In the Python console enter:
+
+*Gui.Selection.addSelection('Unnamed','Face001')*
+*m = FreeCADGui.Selection.getSelection()[0].Shape*
+*ar=m.Area*
+*App.ActiveDocument.Spreadsheet.set("A2", str(ar))*
+
+***Result:***
+
+After recompute, cell A2 of the spreadsheet is the area of Face001.
+
 
 ## Dealing with lost in space import geometry
 
