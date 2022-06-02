@@ -167,8 +167,10 @@ After recompute, cell A2 of the spreadsheet is the area of Face001.
   <li>If the solid is in a container, drag it out into the tree</li>
   <li>Use one of the following to move the solid to the origin</li>
   <ul>
-    <li>MoveToOrigin macro[![Image alt text](<https://raw.githubusercontent.com/easyw/Manipulator/master/Resources/icons/Centering.svg> "Optional image title")](<https://octodex.github.com/> "Optional link title")
-</li>
+    <li>MoveToOrigin macro<img src="https://raw.githubusercontent.com/easyw/Manipulator/master/Resources/icons/Centering.svg"
+       alt="HTML image alt text"
+       title="Optional image title"
+       width="100px"/></li>
     <li>Manipulator workbench</li>
   </ul>
   <li>Use KicadSteup workbench Reset origin</li>
