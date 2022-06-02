@@ -150,14 +150,16 @@ Assume the objects label in the Treeview is: *Face001*
 In the Python console enter:
 
 *Gui.Selection.addSelection('Unnamed','Face001')*
+
 *m = FreeCADGui.Selection.getSelection()[0].Shape*
+
 *ar=m.Area*
+
 *App.ActiveDocument.Spreadsheet.set("A2", str(ar))*
 
 ***Result:***
 
 After recompute, cell A2 of the spreadsheet is the area of Face001.
-
 
 ## Dealing with lost in space import geometry
 
