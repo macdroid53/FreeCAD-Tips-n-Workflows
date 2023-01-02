@@ -161,6 +161,20 @@ In the Python console enter:
 
 After recompute, cell A2 of the spreadsheet is the area of Face001.
 
+## Get the expression in a spreadsheet cell
+
+In the Python console enter:
+
+FreeCAD.ActiveDocument.Spreadsheet.getContents('A2')
+
+A2 is the cell in question, this can be replaced with the alias of the cell as well.
+
+## Get the value in a spreadsheet cell
+
+FreeCAD.ActiveDocument.Spreadsheet.get('A2')
+
+A2 is the cell in question, this can be replaced with the alias of the cell as well.
+
 ## Dealing with lost in space import geometry
 
 <ul>
