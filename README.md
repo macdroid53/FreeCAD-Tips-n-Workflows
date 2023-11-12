@@ -26,6 +26,20 @@ The steps to import an STL file:
   This will create a Basefeature. It is a solid that you can add to or cut away from with Part Design tools.
 </ul>
 
+## Constrain imported geometry
+Sometimes when importing geometry from in DXF or other formats, it defines geometry that
+should never change. It may be that the geometry represents the dimensions of known product.
+Once convertd to a sketch, constraining can be laborious. THis can be avoided by locking all
+geometry in the sketch.
+<ul>
+  <li>Select the sketch in the tree view
+  <li>Press Ctrl+Shift+P
+  <li>In the python console (view menu -> panels -> python console) enter:
+  <li>  import Sketcher
+  <li>  for idx,geo in enumerate(obj.Geometry):obj.addConstraint(Sketcher.Constraint("Block",idx))
+  <li>This adds a Block Constraint to all geometry elements in the sketch.
+</ul>
+(Thanks to TheMarkster for this tip.)
 
 ## Get the radius of a selected arc
 <ul>
