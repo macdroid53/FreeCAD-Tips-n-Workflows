@@ -195,7 +195,7 @@ A2 is the cell in question, this can be replaced with the alias of the cell as w
   <li>If the solid is in a container, drag it out into the tree</li>
   <li>Use one of the following to move the solid to the origin</li>
   <ul>
-    <li>MoveToOrigin macro<img src="https://wiki.freecad.org/images/8/8a/Centericon.png"
+    <li>MoveToOrigin macro<img src="./Centericon.png"
        alt="HTML image alt text"
        title="Optional image title"
        width="48px"/></li>
